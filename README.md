@@ -10,14 +10,14 @@ Define the external JNDI datasource in `master-datasource.xml` which is placed i
 
 ```xml
 <datasource>
-    <name>WSO2_EXTERNAL_DB</name>
-    <description>The datasource used for registry and user manager</description>
+    <name>InHouseExternal_DB</name>
+    <description>The datasource used for external purposes</description>
     <jndiConfig>
-        <name>jdbc/WSO2ExternalDB</name>
+        <name>jdbc/InHouseExternal</name>
     </jndiConfig>
     <definition type="RDBMS">
         <configuration>
-            <url>jdbc:mysql://localhost:3306/apimgt?useSSL=false</url>
+            <url>jdbc:mysql://localhost:3306/external?useSSL=false</url>
             <username>root</username>
             <password>root</password>
             <driverClassName>com.mysql.jdbc.Driver</driverClassName>

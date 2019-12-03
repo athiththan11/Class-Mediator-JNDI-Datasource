@@ -23,7 +23,7 @@ public class ClassMediatorJNDIDatasource extends AbstractMediator {
         try {
             // initialize datasource context with JNDI lookup
             // FIXME: change the JNDI Datasource name accordingly
-            jndiObj = new InitialContext().lookup("jdbc/WSO2ExternalDB");
+            jndiObj = new InitialContext().lookup("jdbc/InHouseExternal");
 
         } catch (NamingException e) {
             log.error("Error while getting datasource configurations", e);
